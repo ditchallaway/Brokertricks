@@ -47,17 +47,20 @@
         <div class="w-nav-button"><div class="w-icon-nav-menu"></div></div>
       </div>
     </div>
-    <div class="html-embed-2 w-embed w-iframe">
-      <iframe
-        id="fluentform"
-        width="100%"
-        loading="lazy"
-        height="500px"
-        style="min-height: 500px; width: 100%"
-        frameborder="0"
-        src="https://word.sandpoint.properties/?ff_landing=17&embedded=1"
-        onload="this.style.height=(this.contentWindow.document.body.scrollHeight+40)+'px';"
-      ></iframe>
+    <div class="html-embed-2 w-embed w-script">
+      <!--- Popupular JS Tag --->
+      <script type="text/javascript">
+        window.Popupular ||
+          (function (w, d, s, u, p) {
+            window.Popupular = { _q: [], _p: p, autoload: true };
+            var s = d.createElement(s);
+            s.type = "text/javascript";
+            s.src = u;
+            s.async = true;
+            d.head.appendChild(s);
+          })(window, document, "script", "https://cdn.popupular.io/script.js", "1189106e-8cce-4c10-81a9-44be0097aa51");
+      </script>
+      <!--- Popupular JS Tag --->
     </div>
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=62ae91ecef1a0b55fa3678fc"
