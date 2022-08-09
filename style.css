@@ -5556,7 +5556,8 @@ a {
 }
 
 .popup-content-wrapper---brix.popup-1-content-wrapper---brix-copy {
-  height: auto;
+  overflow: visible;
+  height: 100%;
   min-width: 77vw;
   margin-right: auto;
   margin-left: auto;
@@ -5623,6 +5624,7 @@ a {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
   padding: 64px 64px 80px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -5847,7 +5849,31 @@ a {
 }
 
 .html-embed-3 {
+  position: static;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
   width: 100%;
+  height: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  -o-object-fit: fill;
+  object-fit: fill;
 }
 
 @media screen and (min-width: 1280px) {
