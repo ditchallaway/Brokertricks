@@ -5148,6 +5148,10 @@ a {
   margin-right: auto;
   margin-left: auto;
   background-color: #000;
+  background-clip: border-box;
+  -webkit-text-fill-color: inherit;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .circles {
