@@ -3750,6 +3750,10 @@ a {
   font-weight: 700;
 }
 
+.nav-link-tricks.w--current:hover {
+  color: #fff152;
+}
+
 .navbar-2 {
   position: -webkit-sticky;
   position: sticky;
@@ -5278,6 +5282,7 @@ a {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .big-pricing-text.white.inline._2 {
@@ -5323,7 +5328,7 @@ a {
   float: right;
   border-radius: 12px;
   background-color: #fafafa;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.51);
   outline-color: #000;
   outline-offset: 0px;
   outline-style: solid;
@@ -5339,6 +5344,7 @@ a {
   margin-bottom: 0px;
   border-radius: 12px;
   background-color: #fff;
+  box-shadow: 0 14px 10px -1px rgba(0, 0, 0, 0.53);
   outline-color: #000;
   outline-offset: 0px;
   outline-style: solid;
@@ -5368,7 +5374,7 @@ a {
     hsla(0, 0%, 100%, 0.9),
     hsla(0, 0%, 100%, 0.9)
   );
-  box-shadow: 4px 4px 12px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.49);
   outline-color: #000;
   outline-offset: 0px;
   outline-style: solid;
