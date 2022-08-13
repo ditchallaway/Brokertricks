@@ -42,7 +42,7 @@
   <body>
     <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
       <div class="container-1280 flex-align-center w-container">
-        <a href="#" class="flex-align-center margin-right-6 w-nav-brand"
+        <a href="/" class="flex-align-center margin-right-6 w-nav-brand"
           ><img src="https://uploads-ssl.webflow.com/62ae91ecef1a0b55fa3678fc/62d865ffe9d962aae8fbbb1a_tricks.svg" loading="lazy" width="35" alt="" class="margin-right-2" />
           <div class="weight-bold"><span class="broker-2">BROKER</span>TRICKS</div></a
         >
@@ -60,6 +60,57 @@
           >
         </div>
         <div class="w-nav-button"><div class="w-icon-nav-menu"></div></div>
+      </div>
+    </div>
+    <div class="wf-section">
+      <div class="w-container">
+        <div class="w-embed w-script">
+          <div id="smart-button-container">
+            <div style="text-align: center">
+              <div id="paypal-button-container"></div>
+            </div>
+          </div>
+          <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+          <script>
+            function initPayPalButton() {
+              paypal
+                .Buttons({
+                  style: {
+                    shape: "rect",
+                    color: "white",
+                    layout: "horizontal",
+                    label: "paypal",
+                  },
+
+                  createOrder: function (data, actions) {
+                    return actions.order.create({
+                      purchase_units: [{ description: "Simple birds-eye view of the subject property including property lines and approximate acres.", amount: { currency_code: "USD", value: 35 } }],
+                    });
+                  },
+
+                  onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (orderData) {
+                      // Full available details
+                      console.log("Capture result", orderData, JSON.stringify(orderData, null, 2));
+
+                      // Show a success message within this page, e.g.
+                      const element = document.getElementById("paypal-button-container");
+                      element.innerHTML = "";
+                      element.innerHTML = "<h3>Thank you for your payment!</h3>";
+
+                      // Or go to another URL:  actions.redirect('thank_you.html');
+                    });
+                  },
+
+                  onError: function (err) {
+                    console.log(err);
+                  },
+                })
+                .render("#paypal-button-container");
+            }
+            initPayPalButton();
+          </script>
+        </div>
       </div>
     </div>
     <script
