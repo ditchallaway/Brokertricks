@@ -2455,14 +2455,16 @@ a {
 
 .hero-heading._50-margin {
   font-family: League Gothic;
+  font-size: 3em;
+  line-height: 75px;
 }
 
 .hero-heading._50-margin.sans {
   text-align: center;
   margin-top: 40px;
   font-family: Ubuntu, Helvetica, sans-serif;
-  font-size: 5rem;
-  line-height: 10rem;
+  font-size: 3.5rem;
+  line-height: 5.5rem;
 }
 
 .hero-paragraph {
@@ -2798,7 +2800,7 @@ a {
   text-align: left;
   letter-spacing: 0.03em;
   font-family: League Gothic;
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 400;
   line-height: 90px;
 }
@@ -3253,7 +3255,7 @@ a {
   text-shadow: 7px 0 0 var(--yellow);
   mix-blend-mode: normal;
   font-family: Modern no, sans-serif;
-  font-size: 30vw;
+  font-size: 10vw;
   font-weight: 400;
   transform: translate(0, -105px);
 }
@@ -3385,7 +3387,7 @@ a {
   letter-spacing: -0.5vw;
   text-shadow: -7px 1px 0 var(--yellow);
   font-family: Modern no, sans-serif;
-  font-size: 30vw;
+  font-size: 10vw;
   transform: translate(0, -105px);
 }
 
@@ -3996,7 +3998,7 @@ a {
 
 .dot-hero {
   z-index: 3;
-  background-color: #eeeff4;
+  background-color: #f0ec27;
   border-radius: 50%;
   width: 12px;
   height: 12px;
@@ -5418,9 +5420,10 @@ a {
   display: flex;
 }
 
-.heading-6 {
+.sm-title {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-weight: 700;
   display: flex;
 }
 
