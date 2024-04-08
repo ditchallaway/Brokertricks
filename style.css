@@ -3011,7 +3011,7 @@ a {
 
 .logo._75-margin-right {
   align-self: auto;
-  height: 75px;
+  height: 50px;
   margin-right: 0;
 }
 
@@ -5567,6 +5567,10 @@ a {
   letter-spacing: 1.2px;
   text-transform: uppercase;
   font-family: Modern no, sans-serif;
+}
+
+.text-block-10 {
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 1280px) {
