@@ -2379,12 +2379,14 @@ a {
   font-size: 100%;
   line-height: 0;
   overflow: visible;
+  transform: translate(70px, -105px);
 }
 
 .h1.jumbo.tricks {
   padding-left: 10rem;
   font-size: 100%;
   line-height: 0;
+  transform: translate(-79px, -105px);
 }
 
 .h1.white {
@@ -3229,7 +3231,7 @@ a {
   bottom: 0%;
   left: 0%;
   right: 0%;
-  transform: scale(1);
+  transform: scale(0.7);
 }
 
 .hero-image.hero {
@@ -3257,7 +3259,7 @@ a {
   font-family: Modern no, sans-serif;
   font-size: 10vw;
   font-weight: 400;
-  transform: translate(0, -105px);
+  transform: translate(0, -160px);
 }
 
 .content-wrapper {
