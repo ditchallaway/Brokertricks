@@ -5683,6 +5683,7 @@ a {
   }
 
   .blur-image {
+    max-width: 75%;
     margin-top: 10vh;
   }
 
@@ -6379,6 +6380,10 @@ a {
     padding: 60px 15px;
   }
 
+  .div-block-2 {
+    opacity: 1;
+  }
+
   .scoll-wrap-hero {
     width: 76%;
   }
@@ -6684,7 +6689,12 @@ a {
   }
 
   .hero-heading._50-margin {
-    font-size: 5em;
+    font-size: 2.5em;
+  }
+
+  .hero-heading._50-margin.sans {
+    font-size: 2rem;
+    line-height: 4rem;
   }
 
   .section.black._100-padding-top-bottom.mobile-padding {
@@ -6720,8 +6730,10 @@ a {
   }
 
   .container.inline-flex._190-margin-bottom {
+    text-align: center;
     padding-left: 0;
     padding-right: 0;
+    font-size: 1em;
   }
 
   .phase {
@@ -6736,12 +6748,13 @@ a {
   }
 
   .h2 {
-    font-size: 4em;
+    text-align: center;
+    font-size: 3em;
     line-height: 1em;
   }
 
   .h2.objection {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .heart {
@@ -6858,6 +6871,10 @@ a {
   }
 
   .div-block-2 {
+    aspect-ratio: auto;
+    opacity: 0;
+    object-fit: contain;
+    max-width: 100vw;
     margin-top: 60px;
   }
 
@@ -7074,6 +7091,13 @@ a {
   .scoll-wrap-hero-2 {
     height: 77%;
     margin-top: 12px;
+  }
+
+  .div-block-3 {
+    order: -1;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
   }
 }
 
