@@ -6666,8 +6666,10 @@ a {
 
 @media screen and (max-width: 479px) {
   .hero {
+    padding-top: 66px;
     padding-left: 33px;
     padding-right: 33px;
+    font-weight: 700;
   }
 
   .h1.jumbo.broker {
@@ -6689,12 +6691,18 @@ a {
   }
 
   .hero-heading._50-margin {
-    font-size: 2.5em;
+    font-family: Modern no, sans-serif;
+    font-size: 2em;
   }
 
   .hero-heading._50-margin.sans {
-    font-size: 2rem;
+    font-family: Modern no, sans-serif;
+    font-size: 3rem;
     line-height: 4rem;
+  }
+
+  .hero-heading._50-margin.sans.highlight {
+    text-align: center;
   }
 
   .section.black._100-padding-top-bottom.mobile-padding {
@@ -6745,6 +6753,11 @@ a {
     justify-content: center;
     margin-top: 20px;
     padding: 40px 0;
+  }
+
+  .text-block.center {
+    margin-top: 160px;
+    margin-bottom: 160px;
   }
 
   .h2 {
@@ -6839,6 +6852,10 @@ a {
     text-decoration: none;
   }
 
+  .scroll.w--current {
+    padding-bottom: 20px;
+  }
+
   .wide-image {
     padding-left: 33px;
     padding-right: 33px;
@@ -6856,6 +6873,10 @@ a {
 
   .container-1282 {
     max-width: none;
+  }
+
+  .hero-wrapper {
+    margin-top: 100px;
   }
 
   .hero-split {
@@ -6876,6 +6897,8 @@ a {
     object-fit: contain;
     max-width: 100vw;
     margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .scoll-wrap-hero {
@@ -7091,6 +7114,10 @@ a {
   .scoll-wrap-hero-2 {
     height: 77%;
     margin-top: 12px;
+  }
+
+  .post-section {
+    margin-top: 100px;
   }
 
   .div-block-3 {
